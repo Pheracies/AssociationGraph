@@ -1,0 +1,20 @@
+﻿# CMakeList.txt : CMake project for AssociationGraph, include source and define
+# project specific logic here.
+#
+
+# Add source to this project's executable.
+
+project(AssociationGraph)
+
+# Define the executable
+add_executable(AssociationGraph main.cpp)
+
+# Tell CMake to go into the subfolders
+add_subdirectory(Graph eigen)
+
+
+if (CMAKE_VERSION VERSION_GREATER 3.12)
+  set_property(TARGET AssociationGraph PROPERTY CXX_STANDARD 20)
+endif()
+
+# TODO: Add tests and install targets if needed.

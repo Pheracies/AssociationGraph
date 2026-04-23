@@ -1,0 +1,20 @@
+# Build output
+out/
+build/
+*.obj
+*.exe
+*.pdb
+*.ilk
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Vendored dep (comment this line out if you WANT to commit Eigen)
+AssociationGraph/eigen/
